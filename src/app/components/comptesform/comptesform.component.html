@@ -1,0 +1,23 @@
+<div class="container">
+
+   <form (ngSubmit)="processForm()">
+     <div class="form group">
+       <label for="codeCompte">codeCompte</label>
+        <input type="text" name="codeCompte" class="form-control" [(ngModel)]="compte.codeCompte">
+      </div>
+      <div class="form group">
+          <label for="dateCreation">dateCreation</label>
+        <input type="text" name="dateCreation" class="form-control" [(ngModel)]="compte.dateCreation">
+      </div>
+      <div class="form group">
+          <label for="solde">solde</label>
+        <input type="text" name="solde" class="form-control" [(ngModel)]="compte.solde">
+      </div>
+      <div class="form group">
+          <label for="decouvert">decouvert</label>
+        <input type="text" name="decouvert" class="form-control" [(ngModel)]="compte.decouvert">
+      </div>
+      <input type="submit" class="btn btn-success" value="save">
+   </form>
+
+</div>

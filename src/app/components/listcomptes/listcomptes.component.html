@@ -1,0 +1,25 @@
+<div class="container">
+
+  <table class="table table-striped">
+      <thead>
+          <th>codeCompte</th>
+          <th>dateCreation</th>
+          <th>solde</th>
+          <th>decouvert</th>
+          <th>Operations </th>
+      </thead>
+      <tbody>
+          <tr *ngFor="let compte of comptes">
+              <td>{{compte.codeCompte}}</td>
+              <td>{{compte.dateCreation}}</td>
+              <td>{{compte.solde}}</td>
+              <td>{{compte.decouvert}}</td>
+              
+              <td><button class="btn btn-danger" (click)="deleteCompte(compte)">Delete</button>
+                  <button class="btn btn-primary" (click)="updateCompte(compte)">Edit</button></td>
+
+          </tr>
+      </tbody>
+  </table>
+  <button class="btn btn-primary" (click)="newCompte()">New User</button>
+</div>
